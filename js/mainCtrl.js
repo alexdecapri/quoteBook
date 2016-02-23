@@ -1,7 +1,7 @@
 var app = angular.module("quoteBook");
 
-app.controller("quoteBook", function($scope) {
+app.controller("mainCtrl", function($scope) {
 
-	$scope.test("hello world");
-	
+	$scope.test = "hello world";
+
 });
