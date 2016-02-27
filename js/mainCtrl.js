@@ -16,6 +16,11 @@ app.controller("mainCtrl", function($scope, dataService) {
 	$scope.remover = function() {
 		dataService.removeData($scope.quoteAuthor);
 	};
+	//use thingPassingIn.toLowerCase() === author.toLowerCase to make case insensitive
+
+	$scope.filterer = function(stuffToFilter) {
+		$scope.clickFilter = stuffToFilter;
+	};
 
 //unneccesary
 	// $scope.getter = function() {
