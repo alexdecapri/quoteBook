@@ -28,9 +28,9 @@ app.service("dataService", function($http) {
 
 	};
 
-	this.removeData = function(text) {
+	this.removeData = function(author) {
 		for (var i = 0; i < quotes.length; i++) {
-			if (text === quotes.text) {
+			if (author === quotes[i].author) {
 				quotes.splice(i, 1); //make sure to use splice, not delete (only to remove properties from an object)
 			}
 		}

@@ -12,6 +12,11 @@ app.controller("mainCtrl", function($scope, dataService) {
 		dataService.addData($scope.quote);
 	};
 
+	//this funciton is on remove button, if you have full quote in there, it removes that quote from the list
+	$scope.remover = function() {
+		dataService.removeData($scope.quoteAuthor);
+	};
+
 //unneccesary
 	// $scope.getter = function() {
 	// 	dataService.getData();

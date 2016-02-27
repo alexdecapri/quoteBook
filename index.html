@@ -7,10 +7,11 @@
 <body ng-controller="mainCtrl">
 
 	<button ng-click="adder(quote)">Add Quote</button>
-		<input ng-model="quote.author" placeholder="author"></input>
-		<input ng-model="quote.text" placeholder="text"></input>
+		<input ng-model="quote.author" placeholder="Author"></input>
+		<input ng-model="quote.text" placeholder="Quote"></input>
 	<br>
-	<button>Remove Quote</button>
+	<button ng-click="remover(quoteAuthor)">Remove Quote</button>
+		<input ng-model="quoteAuthor" placeholder="Author to Remove"></input>
 	<br>
 	<button>Filter Quotes</button>
 	<br>
