@@ -17,9 +17,15 @@ app.service("dataService", function($http) {
 	};
 
 	this.addData = function(data) {
-		if (data.hasOwnProperty("text") && data.hasOwnProperty("author")) {
-			quotes.push(data);
+		if (data) {
+			if ((data.author && data.text) && (data.author !== "" && data.text !== "")) {
+				if (data.hasOwnProperty("text") && data.hasOwnProperty("author")) {
+					quotes.push(data);
+				}
+			}
 		}
+
+
 	};
 
 	this.removeData = function(text) {

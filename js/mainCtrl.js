@@ -4,6 +4,14 @@ app.controller("mainCtrl", function($scope, dataService) {
 
 	$scope.quotes = dataService.getData();
 
+	// $scope.testModel = function(newQuote) {
+	// 	console.log(newQuote);
+	// 	console.log($scope.newQuote);
+	// }
+	$scope.adder = function() {
+		dataService.addData($scope.quote);
+	};
+
 //unneccesary
 	// $scope.getter = function() {
 	// 	dataService.getData();
