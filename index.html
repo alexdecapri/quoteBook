@@ -6,7 +6,8 @@
 </head>
 <body ng-controller="mainCtrl">
 
-	<div ng-repeat="text in quotes">
+	<div ng-repeat="quote in quotes">
+		{{quote.author}}: {{quote.text}}
 	</div>
 
 
